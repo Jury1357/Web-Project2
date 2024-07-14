@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .biggestdivever {
 
     background-color: white;
@@ -41,11 +45,7 @@
 
 }
 
-.list2 {
-    display: flex;
-    gap: 15px;
 
-}
 
 
 /* ////////////////////*/
@@ -59,7 +59,7 @@
 
 .navbar {
     color: white;
-
+padding-right: 10px;
     display: flex;
     justify-content: space-between;
     background-color: blueviolet;
@@ -68,22 +68,37 @@
     position: fixed;
 }
 
+.biglist {
+    display: flex;
+
+    padding-top: 10px;
+}
+
+.list {
+    display: flex;
+
+
+}
+
+.list2 {
+    /* justify-content: flex-end; */
+    padding-top: 0;
+    padding-right: 10px;
+    font-size: 20px;
+    display: flex;
+    gap: 15px;
+}
+
 .heading {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: var(--accent-color);
     font-size: 100px;
     padding-top: 400px;
     font-style: bold;
 }
 
-.list {
-    gap: 10px;
-    padding-top: 10px;
-    padding-right: 10px;
-    font-size: 20px;
-}
+
 
 .hepta {
     color: white;
@@ -94,9 +109,31 @@
 }
 
 .img1 {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    padding-left: 5px;
+
+}
+
+#icon11 {
     width: 20px;
     height: 20px;
     cursor: pointer;
+    display: none;
+
+}
+
+.mystyle {
+    width: 200px;
+    height: 300px;
+    border: 10px black;
+    background-color: brown;
+}
+
+.darkedit {
+    /* justify-content: space-around; */
+    color: var(--quaternary-color);
 }
 
 /*second div/////////////////////*/
@@ -133,8 +170,125 @@
 .secondpara {
     padding-top: 30px;
     color: var(--primary-color);
-
     font-size: 20px;
+}
+
+/* /////////////////HOVER ///////////////////*/
+.heading:hover {
+    font-size: 150px;
+    padding-top: 400px;
+
+}
+
+.box:hover {
+    font-size: 22px;
+    /* cursor:default; */
+    border: 1px solid var(--primary-color);
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
+}
+
+.thirddivpara:hover {
+    font-size: 29px;
+    padding: 5px;
+}
+
+.fifthh1:hover {
+    font-size: 100px;
+    padding: 10px;
+}
+
+.fifthpara:hover {
+    font-size: 22px;
+    padding: 10px;
+}
+
+.fifthparagrah:hover {
+    font-size: 17px;
+    padding: 3px;
+}
+
+.sixthh1:hover {
+    font-size: 80px;
+    padding: 5px;
+}
+
+.box622:hover {
+    font-size: 20px;
+    padding: 5px;
+}
+
+.head71:hover {
+    font-size: 70px;
+    padding: 5px;
+}
+
+.para7:hover {
+    font-size: 30px;
+    padding: 5px;
+}
+
+.box7222:hover {
+    font-size: 22px;
+    border: 1px solid var(--primary-color);
+    width: 250px;
+    padding: 10px;
+    box-shadow: 5px 7px #888888;
+}
+
+.text:hover {
+    font-size: 22px;
+    border: 1px solid var(--primary-color);
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
+}
+
+.thirddivh1:hover {
+    font-size: 60px;
+    border: 1px solid var(--primary-color);
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
+}
+
+.head8:hover {
+    font-size: 31px;
+    border: 1px solid white;
+    padding: 5px;
+    box-shadow: 3px 7px #888888;
+}
+
+.head88:hover {
+    font-size: 27px;
+    padding: 4px;
+
+}
+
+.box811:hover {
+    font-size: 22px;
+    padding: 10px;
+
+}
+
+.box82:hover {
+    font-size: 26px;
+    padding: 10px;
+
+}
+
+#icon11:hover {
+    width: 40px;
+    height: 40px;
+    padding: 7px;
+
+}
+
+.img1:hover {
+    width: 40px;
+    height: 40px;
+
+    padding: 7px;
+   
+
 }
 
 /*div 3 //////////////////////////////////////*/
@@ -142,44 +296,43 @@
     background-color: var(--secondary-color);
     padding: 100px;
     justify-content: center;
-
-
 }
 
 .thirddivpart2 {
- 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
-
 }
 
 .thirddivh1 {
-    font-weight: 400px;
     font-size: 45px;
     color: var(--primary-color);
 }
 
 .box1 {
-    padding-left: 300px;
+    justify-content: center;
+    grid-template-columns: max-content;
     text-align: center;
     width: 1000px;
-
+    padding-left: 17.34%;
+    padding-bottom: 30px;
 
 }
 
 .box {
     height: 300px;
-    width: 300px;
+    width: 330px;
     text-align: center;
-
+    padding-left: 40px;
 
 }
 
 .thirddivpara {
     color: var(--primary-color);
     font-size: 20px;
+    max-width: 1000px;
+
     color: var(--primary-color);
 
 }
@@ -209,25 +362,25 @@
 .fifthdiv {
 
     background-color: var(--tertiary-color);
-    padding-left: 300px;
-    padding-right: 300px;
-    padding-top: 200px;
-    gap: 20px;
-    padding-bottom: 200px;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 13%;
+    gap: 1.34%;
+    padding-bottom: 13%;
 
 }
 
 .box2 {
     text-align: center;
     padding-right: 20px;
-    width: 900px;
-    padding-left: 50px;
+    /* width: 90%; */
+    padding-bottom: 40px;
 }
 
 .boxcontainer {
     display: flex;
     gap: 20px;
-    padding: 30px;
+
 
 }
 
@@ -275,29 +428,28 @@
     text-align: center;
     font-size: 15px;
     color: white;
-    line-height: 1.2;
-    padding-left: 100px;
+    padding-left: 6.6%;
 }
 
 .fifthh1 {
     text-align: center;
     font-weight: 600;
     font-size: 70px;
-    padding-left: 100px;
+    padding-left: 6.6%;
     color: var(--primary-color);
 }
 
 .date {
     color: rgb(213, 209, 209);
 
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .fifthheading {
     font-weight: 200px;
     font-size: larger;
-    padding-top: 50px;
-
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 
 .fifthparagraph {
@@ -310,7 +462,7 @@
 .sixthdiv {
     background-color: var(--secondary-color);
     gap: 20px;
-    padding: 200px;
+    padding: 13.33%;
 
     justify-content: space-between;
 
@@ -337,9 +489,9 @@
 .box622 {
     justify-content: space-between;
     gap: 40px;
-    padding: 40px;
-    width: 35S0px;
-    height: 300Spx;
+    width: 3S0px;
+    height: 30Spx;
+    padding-bottom: 20px;
 }
 
 .img51 {
@@ -389,32 +541,32 @@
 
 .seventhdiv {
     gap: 20px;
-    padding: 200px;
+    padding: 13.34%;
 
     background-color: var(--quaternary-color);
     justify-content: center;
 
 }
 
+
 .box71 {
     text-align: center;
     width: 1100px;
     font-size: 20px;
-
-
-    padding-left: 150px;
+    padding-left: 10%;
 }
 
 .head71 {
-    font-weight: 100px;
+
     padding-bottom: 20px;
+    padding-right: 40px;
     font-style: italic;
     color: var(--primary-color);
-
+    text-align: center;
 }
 
 .head7 {
-    font-weight: 100px;
+
     font-size: 20px;
     padding-top: 20px;
     font-style: italic;
@@ -484,13 +636,14 @@
     background-repeat: no-repeat;
     width: 60px;
     height: 15px;
+
 }
 
 /*8th div/////////////////////////////////////*/
 .eigthdiv {
     background-color: black;
-    padding-right: 150px;
-    padding-left: 250px;
+    padding-right: 10%;
+    padding-left: 15.34%;
     padding-top: 90px;
     padding-bottom: 90px;
     justify-content: space-around;
@@ -500,10 +653,15 @@
 .box81 {
     display: flex;
     gap: 40px;
-    padding-left: 150px;
+    padding-left: 100px;
 }
 
 .head8 {
+    color: white;
+
+}
+
+.head88 {
     color: white;
 
 }
@@ -512,7 +670,7 @@
     background-image: url("white line.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    max-width: 1250px;
+    max-width: 1100px;
     height: 10px;
 
 }
@@ -536,7 +694,7 @@
 .last {
     justify-content: center;
     align-self: center;
-    padding-left: 500px;
+    padding-left: 33.33%;
 }
 
 .box82 {
@@ -545,13 +703,13 @@
 }
 
 .text8 {
-    padding-left: 300px;
+    padding-left: 20%;
     padding-top: 50px;
 }
 
 .box812 {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 
 }
 
@@ -560,37 +718,57 @@
     background-color: black;
     color: white;
     width: 130px;
-    border-top-color: black;
-    border-left-color: black;
-    border-right-color: black;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
     border-bottom-color: rgb(255, 255, 255);
 }
 
+.dark2 {
+    display: none;
+    font-size: 15px;
+}
+
+.navbar .darkedit:hover .dark2 {
+    display: grid;
+    background-color: var(--primary-color);
+    padding: 10px;
+    position: absolute;
+    right: 10px;
+    top: 45px;
+    text-align: center;
+    border-radius: 15%;
+    border-color: var(--quaternary-color);
+}
 
 
+@media (max-width: 500px) {
 
-
-@media (max-width: 600px) {
     .biggestdivever {
-        max-width: 600px;
-        min-width: 300px;
+        width: 500px;
+
     }
 
     .firstdiv {
-        max-height: 450px;
-        max-width: 600px;
-        min-height: 200px;
-        min-width: 200px;
+        height: 500px;
+        width: 500px;
+
     }
 
     .navbar {
-        max-width: 600px;
-        min-width: 200px;
+        width: 485px;
+
     }
 
     .heading {
         font-size: 50px;
-        padding-bottom: 470px;
+        padding-top: 230px;
+    }
+
+    .heading:hover {
+        font-size: 65px;
+        padding-top: 230px;
+
     }
 
     .hepta {
@@ -602,28 +780,37 @@
     .list2 {
         padding-right: 40px;
 
-        font-size: 20px;
     }
 
+    #icon11 {
+        display: block;
+    }
 
-    .navbar .img:hover {
+    .navbar .list2 {
+        display: none;
+    }
+
+    .navbar .list:hover .list2 {
         display: grid;
-        background-color: #eee;
-        padding: 20px;
+        background-color: var(--primary-color);
+        padding: 10px;
         position: absolute;
-        right: 10px;
-        top: 50px;
+        right: 20px;
+        top: 25px;
         text-align: center;
+        border-radius: 15%;
     }
+
 
     /* ////////////////////*/
     .seconddiv {
         flex-direction: column;
         display: flex;
         padding: 100px;
-        padding-left: 150px;
+
 
     }
+
 
     .img2 {
         max-height: 200px;
@@ -653,13 +840,17 @@
         font-size: 15px;
     }
 
-    /* ////////////////////*/
+    /* 3rd div////////////////////////////////////////*/
     .thirddiv {
         padding: 20px;
-        height: 1000px;
+
     }
 
-
+    .box1 {
+        width: 600px;
+        padding-right: 200px;
+        padding-left: 0;
+    }
 
     .thirddivpart2 {
         display: grid;
@@ -672,150 +863,50 @@
     }
 
     .thirddivh1 {
-        font-weight: 250px;
-        font-size: 25px;
-        padding-right: 100px;
-        max-width: 600px;
-        min-width: 400px;
+        font-size: 35px;
     }
 
-    .box1 {
-        padding-left: 5%;
-        max-width: 600px;
-        min-width: 300px;
-    }
 
     .box {
-        flex-direction: column;
-        display: flex;
-        max-height: 150px;
-        max-width: 150px;
-        min-height: 70px;
-        min-width: 70px;
-        padding-bottom: 20px;
+        padding-left: 40px;
 
     }
 
-    .thirddivpara {
-        font-size: 15px;
-        padding-bottom: 20px;
-
-    }
 
     .txtdiv3 {
-        font-weight: 300px;
         font-size: 30px;
-        padding-top: 40px;
 
     }
-
-    .img3 {
-        max-height: 60 px;
-        max-width: 60 px;
-    }
-
 
 
 
     /*fifth div/////////////////////////////////////*/
 
 
-    .fifthdiv {
-
-        padding-left: 20%;
-        padding-right: 20%;
-        padding-top: 13.34%;
-        gap: 1.334%;
-        padding-bottom: 13.43%;
-    }
 
     .boxcontainer {
         flex-direction: column;
         display: flex;
-        gap: 20px;
-        padding-top: 25px;
 
-    }
-
-    .box3 {
-        width: 300px;
-        padding-right: 50%;
-    }
-
-    .img41 {
-        width: 300px;
-        height: 240px;
-        padding-right: 50%;
-
-    }
-
-    .img42 {
-        width: 300px;
-        height: 240px;
-        padding-right: 50%
-    }
-
-    .textonly {
-        gap: 15px;
-        padding-right: 50%;
-
-    }
-
-    .img43 {
-        width: 300px;
-        height: 240px;
-        padding-right: 50%;
-    }
-
-    .box2 {
-
-        width: 600px;
-        padding-right: 150px;
     }
 
     .fifthpara {
 
         font-size: 15px;
-        width: 500px;
-
-        padding-right: 150px;
 
     }
 
     .fifthh1 {
-        font-weight: 600;
+        padding-right: 100px;
         font-size: 40px;
-        padding-right: 150px;
-
+        padding-left: 30px;
+        width: 350px;
     }
 
-    .date {
-        padding-top: 20px;
-   
+    .fifthh1:hover {
+        font-size: 60px;
+        padding-right: 50px;
     }
-
-    .fifthheading {
-        font-weight: 170px;
-        font-size: large;
-        padding-top: 30px;
-
-    }
-
-    .fifthparagraph {
-        padding-top: 45px;
-    }
-
-    .fifthdiv {
-
-        background-color: var(--tertiary-color);
-        padding-left: 20%;
-        padding-right: 20%;
-        padding-top: 13.34%;
-        gap: 1.334%;
-        padding-bottom: 13.43%;
-
-    }
-
 
 
 
@@ -832,51 +923,50 @@
         display: flex;
 
     }
+
     /*7th div/////////////////////////////////////*/
 
-    
- .seventhdiv {
-    gap: 10px;
-    justify-content:start;
+
+    .seventhdiv {
+        gap: 10px;
+    }
+
+
+    .box71 {
+        width: 400px;
+        font-size: 15px;
+        padding-right: 105px;
+        padding-left: 30px;
+    }
+
+    .box72 {
+        flex-direction: column;
+        display: flex;
+    }
+
+    /*8th div/////////////////////////////////////*/
+
+    .box81 {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .last {
+        justify-content: start;
+        padding-right: 300px;
+        padding-left: 20%;
+
+    }
+
+    .box82 {
+        justify-content: start;
+        padding-top: 20px;
+    }
+
+    .text8 {
+        padding-top: 20px;
+        padding-right: 20%;
+
+    }
+
 }
-
-
-
-.box71 {
-    text-align: start;
-    width: 500px;
-    font-size: 15px;
-    padding-right: 125px;
-
-}
-.box72 {
-    flex-direction: column;
-    display: flex;
-}
-
-/*8th div/////////////////////////////////////*/
-
-.box81 {
-    flex-direction: column;
-    display: flex;
- padding-right: 300px;
-}
-.last {
-    justify-content: start;
- padding-right: 300px;
- padding-left: 0;
-
-}
-.box82 {
-    justify-content: start;
-    padding-top: 20px;
-}
-.text8 {
-    padding-top: 20px;
- padding-right: 300px;
-
-}
-
-}
-
-
